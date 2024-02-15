@@ -26,3 +26,9 @@ with open(csv_file, "r") as fd:
 customers.sort(key=lambda customer: customer.debt)
 for customer in customers:
     print(customer)
+
+while True:
+    query = input("==> ")
+    if query == "quit":
+        print("Bye...")
+        break
